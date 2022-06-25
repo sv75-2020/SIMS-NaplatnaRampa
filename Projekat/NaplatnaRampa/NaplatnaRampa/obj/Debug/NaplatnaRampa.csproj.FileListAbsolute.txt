@@ -1,0 +1,11 @@
+C:\Users\Milenko\Desktop\Everything\Faks shit ass\Uvod u softversko\Vezbe 4\SIMS-NaplatnaRampa\Projekat\NaplatnaRampa\NaplatnaRampa\obj\Debug\NaplatnaRampa.csproj.AssemblyReference.cache
+C:\Users\Milenko\Desktop\Everything\Faks shit ass\Uvod u softversko\Vezbe 4\SIMS-NaplatnaRampa\Projekat\NaplatnaRampa\NaplatnaRampa\obj\Debug\NaplatnaRampa.LoginForm.resources
+C:\Users\Milenko\Desktop\Everything\Faks shit ass\Uvod u softversko\Vezbe 4\SIMS-NaplatnaRampa\Projekat\NaplatnaRampa\NaplatnaRampa\obj\Debug\NaplatnaRampa.Properties.Resources.resources
+C:\Users\Milenko\Desktop\Everything\Faks shit ass\Uvod u softversko\Vezbe 4\SIMS-NaplatnaRampa\Projekat\NaplatnaRampa\NaplatnaRampa\obj\Debug\NaplatnaRampa.csproj.GenerateResource.cache
+C:\Users\Milenko\Desktop\Everything\Faks shit ass\Uvod u softversko\Vezbe 4\SIMS-NaplatnaRampa\Projekat\NaplatnaRampa\NaplatnaRampa\obj\Debug\NaplatnaRampa.csproj.CoreCompileInputs.cache
+C:\Users\Milenko\Desktop\Everything\Faks shit ass\Uvod u softversko\Vezbe 4\SIMS-NaplatnaRampa\Projekat\NaplatnaRampa\NaplatnaRampa\bin\Debug\NaplatnaRampa.exe.config
+C:\Users\Milenko\Desktop\Everything\Faks shit ass\Uvod u softversko\Vezbe 4\SIMS-NaplatnaRampa\Projekat\NaplatnaRampa\NaplatnaRampa\bin\Debug\NaplatnaRampa.exe
+C:\Users\Milenko\Desktop\Everything\Faks shit ass\Uvod u softversko\Vezbe 4\SIMS-NaplatnaRampa\Projekat\NaplatnaRampa\NaplatnaRampa\bin\Debug\NaplatnaRampa.pdb
+C:\Users\Milenko\Desktop\Everything\Faks shit ass\Uvod u softversko\Vezbe 4\SIMS-NaplatnaRampa\Projekat\NaplatnaRampa\NaplatnaRampa\obj\Debug\NaplatnaRampa.exe
+C:\Users\Milenko\Desktop\Everything\Faks shit ass\Uvod u softversko\Vezbe 4\SIMS-NaplatnaRampa\Projekat\NaplatnaRampa\NaplatnaRampa\obj\Debug\NaplatnaRampa.pdb
+C:\Users\Milenko\Desktop\Everything\Faks shit ass\Uvod u softversko\Vezbe 4\SIMS-NaplatnaRampa\Projekat\NaplatnaRampa\NaplatnaRampa\obj\Debug\NaplatnaRampa.Forme.AdminForm.resources

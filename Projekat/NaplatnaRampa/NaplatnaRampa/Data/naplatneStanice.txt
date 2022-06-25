@@ -1,0 +1,3 @@
+﻿1|lokacija1
+2|lokacija2
+3|lokacija3
