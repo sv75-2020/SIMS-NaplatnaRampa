@@ -1,0 +1,11 @@
+C:\Users\suput\Documents\GitHub\SIMS-NaplatnaRampa\NaplatnaRampa\NaplatnaRampa\bin\Debug\NaplatnaRampa.exe.config
+C:\Users\suput\Documents\GitHub\SIMS-NaplatnaRampa\NaplatnaRampa\NaplatnaRampa\bin\Debug\NaplatnaRampa.exe
+C:\Users\suput\Documents\GitHub\SIMS-NaplatnaRampa\NaplatnaRampa\NaplatnaRampa\bin\Debug\NaplatnaRampa.pdb
+C:\Users\suput\Documents\GitHub\SIMS-NaplatnaRampa\NaplatnaRampa\NaplatnaRampa\obj\Debug\NaplatnaRampa.csproj.AssemblyReference.cache
+C:\Users\suput\Documents\GitHub\SIMS-NaplatnaRampa\NaplatnaRampa\NaplatnaRampa\obj\Debug\NaplatnaRampa.LoginForm.resources
+C:\Users\suput\Documents\GitHub\SIMS-NaplatnaRampa\NaplatnaRampa\NaplatnaRampa\obj\Debug\NaplatnaRampa.Properties.Resources.resources
+C:\Users\suput\Documents\GitHub\SIMS-NaplatnaRampa\NaplatnaRampa\NaplatnaRampa\obj\Debug\NaplatnaRampa.csproj.GenerateResource.cache
+C:\Users\suput\Documents\GitHub\SIMS-NaplatnaRampa\NaplatnaRampa\NaplatnaRampa\obj\Debug\NaplatnaRampa.csproj.CoreCompileInputs.cache
+C:\Users\suput\Documents\GitHub\SIMS-NaplatnaRampa\NaplatnaRampa\NaplatnaRampa\obj\Debug\NaplatnaRampa.exe
+C:\Users\suput\Documents\GitHub\SIMS-NaplatnaRampa\NaplatnaRampa\NaplatnaRampa\obj\Debug\NaplatnaRampa.pdb
+C:\Users\suput\Documents\GitHub\SIMS-NaplatnaRampa\NaplatnaRampa\NaplatnaRampa\obj\Debug\NaplatnaRampa.Forme.AdminForm.resources
