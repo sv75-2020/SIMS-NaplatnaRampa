@@ -9,3 +9,15 @@ C:\Users\suput\Documents\GitHub\SIMS-NaplatnaRampa\NaplatnaRampa\NaplatnaRampa\o
 C:\Users\suput\Documents\GitHub\SIMS-NaplatnaRampa\NaplatnaRampa\NaplatnaRampa\obj\Debug\NaplatnaRampa.exe
 C:\Users\suput\Documents\GitHub\SIMS-NaplatnaRampa\NaplatnaRampa\NaplatnaRampa\obj\Debug\NaplatnaRampa.pdb
 C:\Users\suput\Documents\GitHub\SIMS-NaplatnaRampa\NaplatnaRampa\NaplatnaRampa\obj\Debug\NaplatnaRampa.Forme.AdminForm.resources
+C:\Users\zoric\Documents\GitHub\SIMS-NaplatnaRampa\NaplatnaRampa\NaplatnaRampa\bin\Debug\NaplatnaRampa.exe.config
+C:\Users\zoric\Documents\GitHub\SIMS-NaplatnaRampa\NaplatnaRampa\NaplatnaRampa\bin\Debug\NaplatnaRampa.exe
+C:\Users\zoric\Documents\GitHub\SIMS-NaplatnaRampa\NaplatnaRampa\NaplatnaRampa\bin\Debug\NaplatnaRampa.pdb
+C:\Users\zoric\Documents\GitHub\SIMS-NaplatnaRampa\NaplatnaRampa\NaplatnaRampa\obj\Debug\NaplatnaRampa.csproj.AssemblyReference.cache
+C:\Users\zoric\Documents\GitHub\SIMS-NaplatnaRampa\NaplatnaRampa\NaplatnaRampa\obj\Debug\NaplatnaRampa.Forme.AdminForm.resources
+C:\Users\zoric\Documents\GitHub\SIMS-NaplatnaRampa\NaplatnaRampa\NaplatnaRampa\obj\Debug\NaplatnaRampa.LoginForm.resources
+C:\Users\zoric\Documents\GitHub\SIMS-NaplatnaRampa\NaplatnaRampa\NaplatnaRampa\obj\Debug\NaplatnaRampa.Properties.Resources.resources
+C:\Users\zoric\Documents\GitHub\SIMS-NaplatnaRampa\NaplatnaRampa\NaplatnaRampa\obj\Debug\NaplatnaRampa.csproj.GenerateResource.cache
+C:\Users\zoric\Documents\GitHub\SIMS-NaplatnaRampa\NaplatnaRampa\NaplatnaRampa\obj\Debug\NaplatnaRampa.csproj.CoreCompileInputs.cache
+C:\Users\zoric\Documents\GitHub\SIMS-NaplatnaRampa\NaplatnaRampa\NaplatnaRampa\obj\Debug\NaplatnaRampa.exe
+C:\Users\zoric\Documents\GitHub\SIMS-NaplatnaRampa\NaplatnaRampa\NaplatnaRampa\obj\Debug\NaplatnaRampa.pdb
+C:\Users\zoric\Documents\GitHub\SIMS-NaplatnaRampa\NaplatnaRampa\NaplatnaRampa\obj\Debug\NaplatnaRampa.Forme.SefForm.resources

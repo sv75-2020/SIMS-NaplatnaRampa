@@ -12,9 +12,22 @@ namespace NaplatnaRampa.Forme
 {
     public partial class SefForm : Form
     {
+        public NaplatnaStanica stanica = new NaplatnaStanica(2,"NS");
+        
         public SefForm()
         {
             InitializeComponent();
+            stanica = Aplikacija.FindStanica(stanica.Id().ToString());
+        }
+
+        private void zarada_stanica_btn_Click(object sender, EventArgs e)
+        {
+            izvestaj.Text = "";
+            izvestaj.Text = "Prihodi stanice " + stanica.Id() + ": " + stanica.stampajIzvestaj(dateTimePicker1.Value,dateTimePicker2.Value);
+        }
+
+        private void SefForm_Load(object sender, EventArgs e)
+        {
         }
     }
 }
