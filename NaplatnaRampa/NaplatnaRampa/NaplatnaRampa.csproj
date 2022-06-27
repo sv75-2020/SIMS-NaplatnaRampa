@@ -52,17 +52,47 @@
     <Compile Include="Forme\AdminForm.Designer.cs">
       <DependentUpon>AdminForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forme\IzmeniMestoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\IzmeniMestoForm.Designer.cs">
+      <DependentUpon>IzmeniMestoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\ManageMestaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\ManageMestaForm.Designer.cs">
+      <DependentUpon>ManageMestaForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forme\MenadzerForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forme\MenadzerForm.Designer.cs">
       <DependentUpon>MenadzerForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forme\NapraviMestoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\NapraviMestoForm.Designer.cs">
+      <DependentUpon>NapraviMestoForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forme\NapraviStanicuForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forme\NapraviStanicuForm.Designer.cs">
       <DependentUpon>NapraviStanicuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\ObrisiMestoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\ObrisiMestoForm.Designer.cs">
+      <DependentUpon>ObrisiMestoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\ObrisiStanicuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\ObrisiStanicuForm.Designer.cs">
+      <DependentUpon>ObrisiStanicuForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forme\RadnikForm.cs">
       <SubType>Form</SubType>
@@ -92,8 +122,26 @@
     <EmbeddedResource Include="Forme\AdminForm.resx">
       <DependentUpon>AdminForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forme\IzmeniMestoForm.resx">
+      <DependentUpon>IzmeniMestoForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forme\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\ManageMestaForm.resx">
+      <DependentUpon>ManageMestaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\NapraviMestoForm.resx">
+      <DependentUpon>NapraviMestoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\NapraviStanicuForm.resx">
+      <DependentUpon>NapraviStanicuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\ObrisiMestoForm.resx">
+      <DependentUpon>ObrisiMestoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\ObrisiStanicuForm.resx">
+      <DependentUpon>ObrisiStanicuForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forme\SefForm.resx">
       <DependentUpon>SefForm.cs</DependentUpon>

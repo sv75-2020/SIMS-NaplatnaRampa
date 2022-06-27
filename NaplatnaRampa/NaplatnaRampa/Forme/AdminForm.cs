@@ -22,6 +22,9 @@ namespace NaplatnaRampa.Forme
             napraviStanicu_btn.FlatStyle = FlatStyle.Flat;
             obrisiStanicu_btn.FlatStyle = FlatStyle.Flat;
             logOut_btn.FlatStyle = FlatStyle.Flat;
+            manageMesta_btn.FlatStyle = FlatStyle.Flat;
+            zarada_stanica_btn.FlatStyle = FlatStyle.Flat;
+            cenovnik.FlatStyle = FlatStyle.Flat;
         }
 
         private void napraviStanicu_btn_Click(object sender, EventArgs e)
@@ -83,6 +86,18 @@ namespace NaplatnaRampa.Forme
                 cenovnik += "Cena za " + pair.Key.ToString() + " iznosi: " + pair.Value* Aplikacija.aktivniCenovnik.CenaPoKm()+"\n";
             }
             MessageBox.Show(cenovnik);
+        }
+
+        private void obrisiStanicu_btn_Click(object sender, EventArgs e)
+        {
+            var obrisiStanicuForm = new ObrisiStanicuForm();
+            obrisiStanicuForm.Show();
+        }
+
+        private void manageMesta_btn_Click(object sender, EventArgs e)
+        {
+            var manageMestaForm = new ManageMestaForm();
+            manageMestaForm.Show();
         }
     }
 }

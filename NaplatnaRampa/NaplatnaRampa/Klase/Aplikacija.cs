@@ -68,5 +68,43 @@ namespace NaplatnaRampa
             }
             return null;
         }
+
+        public static void AddStanica(NaplatnaStanica stanica)
+        {
+            naplatneStanice.Add(stanica);
+            AddStanicaToFile(stanica);
+            
+        }
+
+        public static void AddStanicaToFile(NaplatnaStanica stanica)
+        {
+            using (StreamWriter tw = File.AppendText(fileName))
+            {
+                string line = stanica.id + "|" + stanica.lokacija;
+                tw.WriteLine(line);
+                tw.Close();
+            }
+        }
+
+        public static int GetNewId()
+        {
+            int lastId = naplatneStanice.Last().id;
+            return lastId + 1;
+        }
+
+        public static void RemoveStanicaFromFile(NaplatnaStanica stanica)
+        {
+            naplatneStanice.Remove(stanica);
+            TextWriter tw = new StreamWriter(fileName);
+            foreach(NaplatnaStanica napStanica in naplatneStanice)
+            {
+                if (napStanica.id != stanica.id)
+                {
+                    string line = napStanica.id.ToString() + "|" + napStanica.lokacija;
+                    tw.WriteLine(line);
+                }
+            }
+            tw.Close();
+        }
     }
 }

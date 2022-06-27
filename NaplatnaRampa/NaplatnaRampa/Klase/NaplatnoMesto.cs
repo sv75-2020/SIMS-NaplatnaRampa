@@ -9,11 +9,11 @@ namespace NaplatnaRampa
 {
     public class NaplatnoMesto
     {
-        private int id;
+        public int id;
         private List<String> tablice;
-        private bool elektronsko;
+        public bool elektronsko;
         public List<Naplata> naplate = new List<Naplata>();
-        private NaplatnaStanica stanica;
+        public NaplatnaStanica stanica;
 
         public NaplatnoMesto()
         {
@@ -44,6 +44,11 @@ namespace NaplatnaRampa
                     naplate.Add(naplata);
                 }
             }
+        }
+
+        public int Id()
+        {
+            return id;
         }
 
         public float zarada(DateTime pocetak,DateTime kraj)
