@@ -13,6 +13,10 @@ namespace NaplatnaRampa.Klase
         private float cenaPoKm;
         private Dictionary<TipVozila, float> cenaPoTipu = new Dictionary<TipVozila, float>();
 
+        public Cenovnik()
+        {
+
+        }
         public Cenovnik(DateTime pocetak,DateTime kraj,float cena)
         {
             this.pocetak = pocetak;

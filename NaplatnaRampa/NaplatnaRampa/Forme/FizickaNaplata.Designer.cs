@@ -36,12 +36,18 @@ namespace NaplatnaRampa.Forme
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.vremeTBox = new System.Windows.Forms.TextBox();
             this.tipVozilaCBox = new System.Windows.Forms.ComboBox();
             this.eur = new System.Windows.Forms.RadioButton();
             this.rsd = new System.Windows.Forms.RadioButton();
             this.button1 = new System.Windows.Forms.Button();
+            this.ucitajBtn = new System.Windows.Forms.Button();
+            this.mestoUlaskaCBox = new System.Windows.Forms.ComboBox();
+            this.iznosLabel = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.uplacenoTBox = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.kusurLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -74,11 +80,11 @@ namespace NaplatnaRampa.Forme
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(1017, 408);
+            this.label2.Location = new System.Drawing.Point(639, 101);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 29);
+            this.label2.Size = new System.Drawing.Size(163, 29);
             this.label2.TabIndex = 3;
-            this.label2.Text = "label2";
+            this.label2.Text = "Ukupan iznos:";
             // 
             // label3
             // 
@@ -106,13 +112,6 @@ namespace NaplatnaRampa.Forme
             this.label5.Size = new System.Drawing.Size(122, 29);
             this.label5.TabIndex = 6;
             this.label5.Text = "Tip vozila:";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(278, 208);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(169, 35);
-            this.textBox2.TabIndex = 8;
             // 
             // vremeTBox
             // 
@@ -158,7 +157,7 @@ namespace NaplatnaRampa.Forme
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.button1.Location = new System.Drawing.Point(140, 420);
+            this.button1.Location = new System.Drawing.Point(278, 425);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(225, 84);
             this.button1.TabIndex = 14;
@@ -166,17 +165,90 @@ namespace NaplatnaRampa.Forme
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // ucitajBtn
+            // 
+            this.ucitajBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.ucitajBtn.Location = new System.Drawing.Point(12, 425);
+            this.ucitajBtn.Name = "ucitajBtn";
+            this.ucitajBtn.Size = new System.Drawing.Size(225, 84);
+            this.ucitajBtn.TabIndex = 15;
+            this.ucitajBtn.Text = "Učitaj podatke";
+            this.ucitajBtn.UseVisualStyleBackColor = false;
+            this.ucitajBtn.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // mestoUlaskaCBox
+            // 
+            this.mestoUlaskaCBox.FormattingEnabled = true;
+            this.mestoUlaskaCBox.Items.AddRange(new object[] {
+            "BG",
+            "ZR",
+            "LE",
+            "NS",
+            "SU"});
+            this.mestoUlaskaCBox.Location = new System.Drawing.Point(278, 211);
+            this.mestoUlaskaCBox.Name = "mestoUlaskaCBox";
+            this.mestoUlaskaCBox.Size = new System.Drawing.Size(169, 37);
+            this.mestoUlaskaCBox.TabIndex = 16;
+            // 
+            // iznosLabel
+            // 
+            this.iznosLabel.AutoSize = true;
+            this.iznosLabel.Location = new System.Drawing.Point(863, 101);
+            this.iznosLabel.Name = "iznosLabel";
+            this.iznosLabel.Size = new System.Drawing.Size(0, 29);
+            this.iznosLabel.TabIndex = 17;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(639, 155);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(122, 29);
+            this.label6.TabIndex = 18;
+            this.label6.Text = "Uplaćeno:";
+            // 
+            // uplacenoTBox
+            // 
+            this.uplacenoTBox.Location = new System.Drawing.Point(837, 149);
+            this.uplacenoTBox.Name = "uplacenoTBox";
+            this.uplacenoTBox.Size = new System.Drawing.Size(163, 35);
+            this.uplacenoTBox.TabIndex = 19;
+            this.uplacenoTBox.TextChanged += new System.EventHandler(this.uplacenoTBox_TextChanged);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(639, 211);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(81, 29);
+            this.label7.TabIndex = 20;
+            this.label7.Text = "Kusur:";
+            // 
+            // kusurLabel
+            // 
+            this.kusurLabel.AutoSize = true;
+            this.kusurLabel.Location = new System.Drawing.Point(832, 214);
+            this.kusurLabel.Name = "kusurLabel";
+            this.kusurLabel.Size = new System.Drawing.Size(0, 29);
+            this.kusurLabel.TabIndex = 21;
+            // 
             // FizickaNaplata
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1158, 663);
+            this.Controls.Add(this.kusurLabel);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.uplacenoTBox);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.iznosLabel);
+            this.Controls.Add(this.mestoUlaskaCBox);
+            this.Controls.Add(this.ucitajBtn);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.rsd);
             this.Controls.Add(this.eur);
             this.Controls.Add(this.tipVozilaCBox);
             this.Controls.Add(this.vremeTBox);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -203,11 +275,17 @@ namespace NaplatnaRampa.Forme
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox vremeTBox;
         private System.Windows.Forms.ComboBox tipVozilaCBox;
         private System.Windows.Forms.RadioButton eur;
         private System.Windows.Forms.RadioButton rsd;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button ucitajBtn;
+        private System.Windows.Forms.ComboBox mestoUlaskaCBox;
+        private System.Windows.Forms.Label iznosLabel;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox uplacenoTBox;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label kusurLabel;
     }
 }

@@ -18,7 +18,8 @@ namespace NaplatnaRampa
         private string tablica;
         private float iznos;
         private int idStanice;
-        public Naplata(int id,TipVozila tipVozila,string deonica, bool evri,DateTime vremeNaplate,DateTime vremeUlaska,string tablica,float iznos,int idStanice)
+        private int idRadnika;
+        public Naplata(int id,TipVozila tipVozila,string deonica, bool evri,DateTime vremeNaplate,DateTime vremeUlaska,string tablica,float iznos,int idStanice, int idRadnika)
         {
             this.id = id;
             this.tipVozila = tipVozila;
@@ -29,6 +30,7 @@ namespace NaplatnaRampa
             this.tablica = tablica;
             this.iznos = iznos;
             this.idStanice = idStanice;
+            this.idRadnika = idRadnika;
         }
 
         public DateTime Vreme()
@@ -44,5 +46,14 @@ namespace NaplatnaRampa
         {
             return idStanice;
         }
+
+        public float izracunajCenu()
+        {
+            int km = 100;
+            Dictionary<TipVozila, float> cenaPoTipu = Aplikacija.aktivniCenovnik.CenaPoTipu();
+            float q = cenaPoTipu[tipVozila];
+            return q * km;
+        }
+
     }
 }

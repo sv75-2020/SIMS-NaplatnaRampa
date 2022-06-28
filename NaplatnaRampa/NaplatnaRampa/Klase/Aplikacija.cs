@@ -11,9 +11,10 @@ namespace NaplatnaRampa
     public enum TipVozila { Auto, Kamion, Autobus };
     public static class Aplikacija
     {
+        public static int userId;
         public static List<NaplatnaStanica> naplatneStanice = new List<NaplatnaStanica>();
         public static string fileName= "../../Data/naplatneStanice.txt";
-        public static Cenovnik aktivniCenovnik;
+        public static Cenovnik aktivniCenovnik = new Cenovnik();
 
         static Aplikacija()
         {

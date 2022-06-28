@@ -31,6 +31,18 @@ namespace NaplatnaRampa
             return null;
         }
 
+        public string FindUserId(string email, string password)
+        {
+            string userFileName = "../../Data/users.txt";
+            string[] lines = File.ReadAllLines(userFileName);
+            foreach (string line in lines)
+            {
+                string[] data = line.Split('|');
+                if (email == data[1] && password == data[2]) { return data[0]; }
+            }
+            return null;
+        }
+
         public void OpenUserForm(string userType)
         {
             switch (userType)
@@ -44,7 +56,7 @@ namespace NaplatnaRampa
                     sefForm.Show();
                     break;
                 case "radnik":
-                    var radnikForm = new RadnikForm();
+                    var radnikForm = new FizickaNaplata(2, 2);
                     radnikForm.Show();
                     break;
                 case "menadzer":
@@ -63,6 +75,7 @@ namespace NaplatnaRampa
 
         private void login_btn_Click(object sender, EventArgs e)
         {
+            Aplikacija.userId = Int32.Parse(FindUserId(username_tb.Text, password_tb.Text));
             string userType = FindUser(username_tb.Text, password_tb.Text);
             if (!(userType is null))
             {

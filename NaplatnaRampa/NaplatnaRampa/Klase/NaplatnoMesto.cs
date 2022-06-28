@@ -4,22 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using NaplatnaRampa.Klase;
 
 namespace NaplatnaRampa
 {
     public class NaplatnoMesto
     {
         public int id;
-        private List<String> tablice;
+        public List<string> tablice = new List<string>();
         public bool elektronsko;
         public List<Naplata> naplate = new List<Naplata>();
         public NaplatnaStanica stanica;
         private bool radi;
-
-        public NaplatnoMesto()
-        {
-            LoadNaplate("Data/naplate.txt");
-        }
+        public CitacTablica citacTablica;
 
         public NaplatnoMesto(int id,bool elektronsko,NaplatnaStanica stanica,bool radi)
         {
@@ -28,6 +25,7 @@ namespace NaplatnaRampa
             this.stanica = stanica;
             this.radi = radi;
             LoadNaplate("../../Data/naplate.txt");
+            citacTablica = new CitacTablica(stanica.id, id);
         }
         public void LoadNaplate(string fileName)
         {
@@ -42,7 +40,7 @@ namespace NaplatnaRampa
                 Enum.TryParse<TipVozila>(data[1],out TipVozila tip);
                 if (data[8] == id.ToString())
                 {
-                    Naplata naplata = new Naplata(Int32.Parse(data[0]), tip, data[2], evri, DateTime.Parse(data[4]), DateTime.Parse(data[5]), data[6], float.Parse(data[7]), Int32.Parse(data[8]));
+                    Naplata naplata = new Naplata(Int32.Parse(data[0]), tip, data[2], evri, DateTime.Parse(data[4]), DateTime.Parse(data[5]), data[6], float.Parse(data[7]), Int32.Parse(data[8]), Int32.Parse(data[9]));
                     naplate.Add(naplata);
                 }
 

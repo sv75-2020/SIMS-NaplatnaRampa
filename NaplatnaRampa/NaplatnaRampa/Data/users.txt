@@ -1,8 +1,5 @@
-﻿1|admin|admin|admin
-2|sef|sef|sef
-3|radnik|radnik|radnik
-4|menadzer|menadzer|menadzer
-5|a|a|admin
-6|s|s|sef
-7|r|r|radnik
-8|m|m|menadzer
+﻿1|a|a|admin
+2|s|s|sef
+3|r|r|radnik
+4|m|m|menadzer
+5|r1|r1|radnik

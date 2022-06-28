@@ -52,6 +52,12 @@
     <Compile Include="Forme\AdminForm.Designer.cs">
       <DependentUpon>AdminForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forme\FizickaNaplata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\FizickaNaplata.Designer.cs">
+      <DependentUpon>FizickaNaplata.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forme\IzmeniMestoForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +114,7 @@
     </Compile>
     <Compile Include="Klase\Aplikacija.cs" />
     <Compile Include="Klase\Cenovnik.cs" />
+    <Compile Include="Klase\CitacTablica.cs" />
     <Compile Include="Klase\NaplatnoMesto.cs" />
     <Compile Include="Klase\NaplatnaStanica.cs" />
     <Compile Include="Forme\LoginForm.cs">
@@ -121,6 +128,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forme\AdminForm.resx">
       <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\FizickaNaplata.resx">
+      <DependentUpon>FizickaNaplata.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forme\IzmeniMestoForm.resx">
       <DependentUpon>IzmeniMestoForm.cs</DependentUpon>

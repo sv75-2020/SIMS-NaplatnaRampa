@@ -1,4 +1,5 @@
-1|false|2
-3|true|2
-4|true|1
-5|false|2
+1|false|2|true
+2|true|2|true
+3|true|2|true
+4|true|1|false
+5|false|2|false
