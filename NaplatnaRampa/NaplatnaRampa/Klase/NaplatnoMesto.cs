@@ -58,6 +58,11 @@ namespace NaplatnaRampa
         {
             return radi;
         }
+
+        public void setRadi(bool radi)
+        {
+            this.radi = radi;
+        }
         public string newId()
         {
             string id = "";
