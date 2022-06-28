@@ -39,3 +39,9 @@ C:\Users\Milenko\Desktop\Everything\Faks shit ass\Uvod u softversko\Vezbe 4\SIMS
 C:\Users\Milenko\Desktop\Everything\Faks shit ass\Uvod u softversko\Vezbe 4\SIMS-NaplatnaRampa\NaplatnaRampa\NaplatnaRampa\obj\Debug\NaplatnaRampa.Forme.ManageMestaForm.resources
 C:\Users\Milenko\Desktop\Everything\Faks shit ass\Uvod u softversko\Vezbe 4\SIMS-NaplatnaRampa\NaplatnaRampa\NaplatnaRampa\obj\Debug\NaplatnaRampa.Forme.IzmeniMestoForm.resources
 C:\Users\Milenko\Desktop\Everything\Faks shit ass\Uvod u softversko\Vezbe 4\SIMS-NaplatnaRampa\NaplatnaRampa\NaplatnaRampa\obj\Debug\NaplatnaRampa.Forme.ObrisiMestoForm.resources
+C:\Users\zoric\Documents\GitHub\SIMS-NaplatnaRampa\NaplatnaRampa\NaplatnaRampa\obj\Debug\NaplatnaRampa.Forme.IzmeniMestoForm.resources
+C:\Users\zoric\Documents\GitHub\SIMS-NaplatnaRampa\NaplatnaRampa\NaplatnaRampa\obj\Debug\NaplatnaRampa.Forme.ManageMestaForm.resources
+C:\Users\zoric\Documents\GitHub\SIMS-NaplatnaRampa\NaplatnaRampa\NaplatnaRampa\obj\Debug\NaplatnaRampa.Forme.NapraviMestoForm.resources
+C:\Users\zoric\Documents\GitHub\SIMS-NaplatnaRampa\NaplatnaRampa\NaplatnaRampa\obj\Debug\NaplatnaRampa.Forme.NapraviStanicuForm.resources
+C:\Users\zoric\Documents\GitHub\SIMS-NaplatnaRampa\NaplatnaRampa\NaplatnaRampa\obj\Debug\NaplatnaRampa.Forme.ObrisiMestoForm.resources
+C:\Users\zoric\Documents\GitHub\SIMS-NaplatnaRampa\NaplatnaRampa\NaplatnaRampa\obj\Debug\NaplatnaRampa.Forme.ObrisiStanicuForm.resources

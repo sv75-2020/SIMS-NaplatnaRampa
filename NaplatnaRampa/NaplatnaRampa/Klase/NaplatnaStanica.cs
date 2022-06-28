@@ -28,12 +28,15 @@ namespace NaplatnaRampa
             {
                 string[] data = line.Split('|');
                 bool elektronsko = false;
+                bool radi = false;
                 if (data[1] == "true")
                     elektronsko = true;
+                if (data[3] == "true")
+                    radi = true;
                 Enum.TryParse<TipVozila>(data[1], out TipVozila tip);
                 if (data[2] == id.ToString())
                 {
-                    NaplatnoMesto mesto = new NaplatnoMesto(Int32.Parse(data[0]), elektronsko, Aplikacija.FindStanica(data[2]));
+                    NaplatnoMesto mesto = new NaplatnoMesto(Int32.Parse(data[0]), elektronsko, Aplikacija.FindStanica(data[2]),radi);
                     naplatnaMesta.Add(mesto);
                 }
             }
@@ -79,7 +82,7 @@ namespace NaplatnaRampa
         {
             using (StreamWriter tw = File.AppendText(fileName))
             {
-                string line = mesto.id + "|" + mesto.elektronsko.ToString().ToLower() + "|" + mesto.stanica.id.ToString();
+                string line = mesto.id + "|" + mesto.elektronsko.ToString().ToLower() + "|" + mesto.stanica.id.ToString()+"|"+mesto.Radi().ToString();
                 tw.WriteLine(line);
                 tw.Close();
             }
@@ -95,7 +98,7 @@ namespace NaplatnaRampa
         public void RemoveMestoFromFile(NaplatnoMesto mesto, int poz)
         {
             var tempFile = Path.GetTempFileName();
-            var linesToKeep = File.ReadLines(fileName).Where(l => l.Split('|')[0] != mesto.id.ToString());
+            var linesToKeep = File.ReadLines(fileName).Where(l => l.Split('|')[0] != mesto.id.ToString() + "|" + mesto.Radi().ToString());
 
             File.WriteAllLines(tempFile, linesToKeep);
 
@@ -113,7 +116,7 @@ namespace NaplatnaRampa
                 mesto.elektronsko = true;
             }
 
-            string newLine = mesto.id.ToString() + "|" + mesto.elektronsko.ToString().ToLower() + "|" + mesto.stanica.id.ToString();
+            string newLine = mesto.id.ToString() + "|" + mesto.elektronsko.ToString().ToLower() + "|" + mesto.stanica.id.ToString() + "|" + mesto.Radi().ToString();
             
             string[] arrLine = File.ReadAllLines(fileName);
             arrLine[poz - 1] = newLine;
