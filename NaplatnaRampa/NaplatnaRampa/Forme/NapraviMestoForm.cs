@@ -27,9 +27,13 @@ namespace NaplatnaRampa.Forme
             {
                 elektronsko = true;
             }
-
+            bool radi = true;
+            if (electronic_cb.SelectedItem.ToString() == "Elektronsko")
+            {
+                radi = true;
+            }
             int idMesta = napStanica.GetNewId();
-            NaplatnoMesto mesto = new NaplatnoMesto(idMesta, elektronsko, napStanica);
+            NaplatnoMesto mesto = new NaplatnoMesto(idMesta, elektronsko, napStanica,radi);
             napStanica.AddMesto(mesto);
             MessageBox.Show("Dodato novo naplatno mesto!");
             this.Hide();
