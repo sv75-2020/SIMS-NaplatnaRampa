@@ -15,11 +15,6 @@ namespace NaplatnaRampa
         public List<Naplata> naplate = new List<Naplata>();
         public NaplatnaStanica stanica;
 
-        public NaplatnoMesto()
-        {
-            LoadNaplate("Data/naplate.txt");
-        }
-
         public NaplatnoMesto(int id,bool elektronsko,NaplatnaStanica stanica)
         {
             this.id = id;
@@ -43,6 +38,7 @@ namespace NaplatnaRampa
                     Naplata naplata = new Naplata(Int32.Parse(data[0]), tip, data[2], evri, DateTime.Parse(data[4]), DateTime.Parse(data[5]), data[6], float.Parse(data[7]), Int32.Parse(data[8]));
                     naplate.Add(naplata);
                 }
+
             }
         }
 
@@ -63,5 +59,6 @@ namespace NaplatnaRampa
             }
             return zarada;
         }
+
     }
 }
