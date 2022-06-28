@@ -14,7 +14,8 @@ namespace NaplatnaRampa
         public static int userId;
         public static List<NaplatnaStanica> naplatneStanice = new List<NaplatnaStanica>();
         public static string fileName= "../../Data/naplatneStanice.txt";
-        public static Cenovnik aktivniCenovnik = new Cenovnik();
+        public static Cenovnik aktivniCenovnik;
+        public static Dictionary<string,float> deonice=new Dictionary<string,float>();
 
         static Aplikacija()
         {
@@ -32,6 +33,17 @@ namespace NaplatnaRampa
                 string[] data = line.Split('|');
                 NaplatnaStanica naplatnaStanica = new NaplatnaStanica(Int32.Parse(data[0]), data[1]);
                 naplatneStanice.Add(naplatnaStanica);
+            }
+        }
+
+        public static void LoadDeonice()
+        {
+            string[] lines = File.ReadAllLines("../../Data/deonice.txt");
+
+            foreach (string line in lines)
+            {
+                string[] data = line.Split('|');
+                deonice.Add(data[0], float.Parse(data[1]));
             }
         }
 

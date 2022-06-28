@@ -33,6 +33,10 @@ namespace NaplatnaRampa
             this.idRadnika = idRadnika;
         }
 
+        public bool proveraProsecneBrzine()
+        {
+            if(deonica.Equals(gradovi[0]+"-"+grad) || )
+        }
         public DateTime Vreme()
         {
             return vremeNaplate;
