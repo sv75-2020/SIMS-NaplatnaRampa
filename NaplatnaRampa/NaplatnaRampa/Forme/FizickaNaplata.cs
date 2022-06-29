@@ -14,12 +14,13 @@ namespace NaplatnaRampa.Forme
     {
         int idNapMesta;
         int idNapStanice;
-        NaplatnoMesto naplatnoMesto;
+        int pozicija;
+        readonly NaplatnoMesto naplatnoMesto;
         public FizickaNaplata(int idNapMesta, int idNapStanice)
         {
             InitializeComponent();
             NaplatnaStanica stanica = Aplikacija.FindStanica(idNapStanice.ToString());
-            (naplatnoMesto, _) = stanica.FindMesto(idNapMesta.ToString());
+            (naplatnoMesto, pozicija) = stanica.FindMesto(idNapMesta.ToString());
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -133,8 +134,11 @@ namespace NaplatnaRampa.Forme
                 }
                 uredjajiTabela();
             }
+            NaplatnaStanica stanica = Aplikacija.FindStanica(idNapStanice.ToString());
+            stanica.naplatnaMesta[pozicija] = naplatnoMesto;
+
         }
 
-        
+
     }
 }
