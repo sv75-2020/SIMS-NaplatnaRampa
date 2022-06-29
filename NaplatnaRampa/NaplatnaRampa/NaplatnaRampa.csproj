@@ -57,6 +57,7 @@
     </Compile>
     <Compile Include="Forme\FizickaNaplata.Designer.cs">
       <DependentUpon>FizickaNaplata.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forme\IspravnostForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +137,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forme\FizickaNaplata.resx">
       <DependentUpon>FizickaNaplata.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forme\IspravnostForm.resx">
       <DependentUpon>IspravnostForm.cs</DependentUpon>
     </EmbeddedResource>

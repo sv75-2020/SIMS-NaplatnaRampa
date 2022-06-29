@@ -35,7 +35,8 @@ namespace NaplatnaRampa
 
         public bool proveraProsecneBrzine()
         {
-            if(deonica.Equals(gradovi[0]+"-"+grad) || )
+            TimeSpan vreme = vremeNaplate - vremeUlaska;
+            return Aplikacija.deonice[deonica] / (vreme.TotalMinutes / 60) > 120;
         }
         public DateTime Vreme()
         {
@@ -56,6 +57,8 @@ namespace NaplatnaRampa
             int km = 100;
             Dictionary<TipVozila, float> cenaPoTipu = Aplikacija.aktivniCenovnik.CenaPoTipu();
             float q = cenaPoTipu[tipVozila];
+            if (evri)
+                return q * km / 117;
             return q * km;
         }
 

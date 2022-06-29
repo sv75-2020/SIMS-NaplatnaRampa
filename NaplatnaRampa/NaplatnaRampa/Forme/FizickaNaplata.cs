@@ -44,20 +44,26 @@ namespace NaplatnaRampa.Forme
             
 
             Naplata naplata = new Naplata(Int32.Parse(newId), tipVozila, deonica, evri, vremeIzlaska, vremeUlaska, tablica, 0, idNapStanice, Int32.Parse(userId));
+            if (naplata.proveraProsecneBrzine())
+            {
+                policijaLabel.Show();
+            }
             iznosLabel.Text = naplata.izracunajCenu().ToString();
-
         }
 
         private void FizickaNaplata_Load(object sender, EventArgs e)
         {
             tabliceTBox.ReadOnly = true;
             rsd.Checked = true;
+            policijaLabel.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             tabliceTBox.Text = naplatnoMesto.citacTablica.ocitajTablicu();
-
+            vremeTBox.Text = "";
+            rsd.Checked = true;
+            policijaLabel.Hide();
         }
 
         private float vratiKusur(float novac)
@@ -72,7 +78,10 @@ namespace NaplatnaRampa.Forme
 
         private void uplacenoTBox_TextChanged(object sender, EventArgs e)
         {
-            kusurLabel.Text = vratiKusur(float.Parse(uplacenoTBox.Text)).ToString();
+            if (uplacenoTBox.Text != "")
+            {
+                kusurLabel.Text = vratiKusur(float.Parse(uplacenoTBox.Text)).ToString();
+            }
         }
     }
 }

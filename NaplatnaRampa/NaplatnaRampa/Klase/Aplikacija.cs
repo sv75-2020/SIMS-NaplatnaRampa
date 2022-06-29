@@ -22,6 +22,7 @@ namespace NaplatnaRampa
             LoadNaplatneStanice();
             LoadMesta();
             LoadCenovnik();
+            LoadDeonice();
         }
 
         public static void LoadNaplatneStanice()

@@ -48,6 +48,7 @@ namespace NaplatnaRampa.Forme
             this.uplacenoTBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.kusurLabel = new System.Windows.Forms.Label();
+            this.policijaLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -232,11 +233,23 @@ namespace NaplatnaRampa.Forme
             this.kusurLabel.Size = new System.Drawing.Size(0, 29);
             this.kusurLabel.TabIndex = 21;
             // 
+            // policijaLabel
+            // 
+            this.policijaLabel.AutoSize = true;
+            this.policijaLabel.BackColor = System.Drawing.Color.Transparent;
+            this.policijaLabel.ForeColor = System.Drawing.Color.Red;
+            this.policijaLabel.Location = new System.Drawing.Point(52, 567);
+            this.policijaLabel.Name = "policijaLabel";
+            this.policijaLabel.Size = new System.Drawing.Size(309, 29);
+            this.policijaLabel.TabIndex = 23;
+            this.policijaLabel.Text = "Vozilo je prekoračilo brzinu!";
+            // 
             // FizickaNaplata
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1158, 663);
+            this.Controls.Add(this.policijaLabel);
             this.Controls.Add(this.kusurLabel);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.uplacenoTBox);
@@ -287,5 +300,6 @@ namespace NaplatnaRampa.Forme
         private System.Windows.Forms.TextBox uplacenoTBox;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label kusurLabel;
+        private System.Windows.Forms.Label policijaLabel;
     }
 }

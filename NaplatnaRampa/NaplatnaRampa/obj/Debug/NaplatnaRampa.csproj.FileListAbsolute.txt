@@ -54,3 +54,4 @@ C:\Users\suput\Documents\GitHub\SIMS-NaplatnaRampa\NaplatnaRampa\NaplatnaRampa\o
 C:\Users\suput\Documents\GitHub\SIMS-NaplatnaRampa\NaplatnaRampa\NaplatnaRampa\obj\Debug\NaplatnaRampa.Forme.ObrisiStanicuForm.resources
 C:\Users\suput\Documents\GitHub\SIMS-NaplatnaRampa\NaplatnaRampa\NaplatnaRampa\obj\Debug\NaplatnaRampa.Forme.SefForm.resources
 C:\Users\zoric\Documents\GitHub\SIMS-NaplatnaRampa\NaplatnaRampa\NaplatnaRampa\obj\Debug\NaplatnaRampa.Forme.IspravnostForm.resources
+C:\Users\suput\Documents\GitHub\SIMS-NaplatnaRampa\NaplatnaRampa\NaplatnaRampa\obj\Debug\NaplatnaRampa.Forme.IspravnostForm.resources
