@@ -29,10 +29,7 @@ namespace NaplatnaRampa
             this.radi = radi;
             LoadNaplate("../../Data/naplate.txt");
             citacTablica = new CitacTablica(stanica.id, id, citacTabliceRadi);
-            if (elektronsko)
-            {
-                citacTaga = new CitacTaga(citacTagaRadi);
-            }
+            citacTaga = new CitacTaga(citacTagaRadi);
             semafor = new Semafor(semaforRadi);
             rampa = new Rampa(rampaRadi);
 

@@ -108,10 +108,15 @@ namespace NaplatnaRampa
             return Int32.Parse(lastLine[0]) + 1;
         }
 
+        public string getLokacija()
+        {
+            return this.lokacija;
+        }
+
         public void RemoveMestoFromFile(NaplatnoMesto mesto, int poz)
         {
             var tempFile = Path.GetTempFileName();
-            var linesToKeep = File.ReadLines(fileName).Where(l => l.Split('|')[0] != mesto.id.ToString() + "|" + mesto.Radi().ToString());
+            var linesToKeep = File.ReadLines(fileName).Where(l => l.Split('|')[0] != mesto.id.ToString());
 
             File.WriteAllLines(tempFile, linesToKeep);
 
@@ -129,7 +134,7 @@ namespace NaplatnaRampa
                 mesto.elektronsko = true;
             }
 
-            string newLine = mesto.id.ToString() + "|" + mesto.elektronsko.ToString().ToLower() + "|" + mesto.stanica.id.ToString() + "|" + mesto.Radi().ToString();
+            string newLine = mesto.id.ToString() + "|" + mesto.elektronsko.ToString().ToLower() + "|" + mesto.stanica.id.ToString() + "|" + mesto.Radi().ToString() + "|" + mesto.citacTablica.getRadi().ToString().ToLower() + "|" + mesto.rampa.getRadi().ToString().ToLower() + "|" + mesto.semafor.getRadi().ToString().ToLower() + "|" + mesto.citacTaga.getRadi().ToString().ToLower();
             
             string[] arrLine = File.ReadAllLines(fileName);
             arrLine[poz - 1] = newLine;
