@@ -17,15 +17,25 @@ namespace NaplatnaRampa
         public NaplatnaStanica stanica;
         private bool radi;
         public CitacTablica citacTablica;
+        public Rampa rampa;
+        public Semafor semafor;
+        public CitacTaga citacTaga;
 
-        public NaplatnoMesto(int id,bool elektronsko,NaplatnaStanica stanica,bool radi)
+        public NaplatnoMesto(int id,bool elektronsko,NaplatnaStanica stanica,bool radi, bool citacTabliceRadi, bool rampaRadi, bool semaforRadi, bool citacTagaRadi)
         {
             this.id = id;
             this.elektronsko = elektronsko;
             this.stanica = stanica;
             this.radi = radi;
             LoadNaplate("../../Data/naplate.txt");
-            citacTablica = new CitacTablica(stanica.id, id);
+            citacTablica = new CitacTablica(stanica.id, id, citacTabliceRadi);
+            if (elektronsko)
+            {
+                citacTaga = new CitacTaga(citacTagaRadi);
+            }
+            semafor = new Semafor(semaforRadi);
+            rampa = new Rampa(rampaRadi);
+
         }
         public void LoadNaplate(string fileName)
         {

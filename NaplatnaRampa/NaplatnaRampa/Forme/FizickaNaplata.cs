@@ -48,6 +48,11 @@ namespace NaplatnaRampa.Forme
             {
                 policijaLabel.Show();
             }
+
+            Dictionary<TipVozila, float> cenaPoTipu = Aplikacija.aktivniCenovnik.CenaPoTipu();
+            float q = cenaPoTipu[tipVozila];
+            MessageBox.Show("enumi su sranje"+tipVozila.ToString());
+            MessageBox.Show("q: "+q.ToString());
             iznosLabel.Text = naplata.izracunajCenu().ToString();
         }
 
@@ -56,18 +61,39 @@ namespace NaplatnaRampa.Forme
             tabliceTBox.ReadOnly = true;
             rsd.Checked = true;
             policijaLabel.Hide();
+            uredjajiTabela();
+            button1.Enabled = false;
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void uredjajiTabela()
+        {
+            DataTable uredjajiTable = new DataTable();
+            uredjajiTable.Columns.Add("Uređaj");
+            uredjajiTable.Columns.Add("Ispravno radi");
+            uredjajiTable.Rows.Add("Citac tablice", naplatnoMesto.citacTablica.RadiDaNe());
+            uredjajiTable.Rows.Add("Semafor", naplatnoMesto.semafor.RadiDaNe());
+            uredjajiTable.Rows.Add("Rampa", naplatnoMesto.rampa.RadiDaNe());
+            if (naplatnoMesto.elektronsko)
+            {
+                uredjajiTable.Rows.Add("Citac taga", naplatnoMesto.citacTaga.RadiDaNe());
+            }
+            uredjajiGridView.DataSource = uredjajiTable;
+        }
+
+        private void ucitajBtn_Click(object sender, EventArgs e)
         {
             tabliceTBox.Text = naplatnoMesto.citacTablica.ocitajTablicu();
             vremeTBox.Text = "";
             rsd.Checked = true;
             policijaLabel.Hide();
+            rampaStanje.Text = "Rampa: spuštena";
+            button1.Enabled = true;
+            ucitajBtn.Enabled = false;
         }
 
         private float vratiKusur(float novac)
         {
+            rampaStanje.Text = "Rampa: dignuta";
             float iznos = float.Parse(iznosLabel.Text);
             if (novac > iznos)
             {
@@ -83,5 +109,33 @@ namespace NaplatnaRampa.Forme
                 kusurLabel.Text = vratiKusur(float.Parse(uplacenoTBox.Text)).ToString();
             }
         }
+
+        private void kvarBtn_Click(object sender, EventArgs e)
+        {
+            if (uredjajiGridView.SelectedRows.Count > 0)
+            {
+                int rowIndex = uredjajiGridView.CurrentCell.RowIndex;
+                switch (rowIndex)
+                {
+                    case 0:
+                        naplatnoMesto.citacTablica.setRadi(false);
+                        break;
+                    case 1:
+                        naplatnoMesto.semafor.setRadi(false);
+                        break;
+                    case 2:
+                        naplatnoMesto.rampa.setRadi(false);
+                        break;
+                    case 3:
+                        naplatnoMesto.citacTaga.setRadi(false);
+                        break;
+                    default:
+                        break;
+                }
+                uredjajiTabela();
+            }
+        }
+
+        
     }
 }

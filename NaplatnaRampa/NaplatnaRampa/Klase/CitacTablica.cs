@@ -12,12 +12,14 @@ namespace NaplatnaRampa.Klase
         int idNapStanice;
         NaplatnoMesto naplatnoMesto;
         static Random rnd;
+        bool radi;
 
-        public CitacTablica(int idNapStanice, int idNapMesta)
+        public CitacTablica(int idNapStanice, int idNapMesta, bool citacTabliceRadi)
         {
             this.idNapStanice = idNapStanice;
             this.idNapMesta = idNapMesta;
             rnd = new Random();
+            radi = citacTabliceRadi;
         }
 
         public string ocitajTablicu()
@@ -42,5 +44,18 @@ namespace NaplatnaRampa.Klase
             }
             naplatnoMesto.tablice.Add(tablica);
         }
+
+        public string RadiDaNe()
+        {
+            if (radi)
+                return "Da";
+            return "Ne";
+        }
+
+        public void setRadi(bool radi)
+        {
+            this.radi = radi;
+        }
+
     }
 }

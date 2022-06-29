@@ -29,14 +29,27 @@ namespace NaplatnaRampa
                 string[] data = line.Split('|');
                 bool elektronsko = false;
                 bool radi = false;
+                bool citacTablice = false;
+                bool semafor = false;
+                bool rampa = false;
+                bool citacTaga = false;
+
                 if (data[1] == "true")
                     elektronsko = true;
                 if (data[3] == "true")
                     radi = true;
+                if (data[4] == "true")
+                    citacTablice = true;
+                if (data[5] == "true")
+                    semafor = true;
+                if (data[6] == "true")
+                    rampa = true;
+                if (data[7] == "true" && elektronsko)
+                    citacTaga = true;
                 Enum.TryParse<TipVozila>(data[1], out TipVozila tip);
                 if (data[2] == id.ToString())
                 {
-                    NaplatnoMesto mesto = new NaplatnoMesto(Int32.Parse(data[0]), elektronsko, Aplikacija.FindStanica(data[2]),radi);
+                    NaplatnoMesto mesto = new NaplatnoMesto(Int32.Parse(data[0]), elektronsko, Aplikacija.FindStanica(data[2]),radi, citacTablice, rampa, semafor, citacTaga);
                     naplatnaMesta.Add(mesto);
                 }
             }

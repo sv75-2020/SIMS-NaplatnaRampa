@@ -54,7 +54,7 @@ namespace NaplatnaRampa
 
         public float izracunajCenu()
         {
-            int km = 100;
+            float km = Aplikacija.aktivniCenovnik.CenaPoKm();
             Dictionary<TipVozila, float> cenaPoTipu = Aplikacija.aktivniCenovnik.CenaPoTipu();
             float q = cenaPoTipu[tipVozila];
             if (evri)
