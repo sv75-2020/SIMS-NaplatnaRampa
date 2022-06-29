@@ -51,8 +51,6 @@ namespace NaplatnaRampa.Forme
 
             Dictionary<TipVozila, float> cenaPoTipu = Aplikacija.aktivniCenovnik.CenaPoTipu();
             float q = cenaPoTipu[tipVozila];
-            MessageBox.Show("enumi su sranje"+tipVozila.ToString());
-            MessageBox.Show("q: "+q.ToString());
             iznosLabel.Text = naplata.izracunajCenu().ToString();
         }
 
@@ -84,6 +82,7 @@ namespace NaplatnaRampa.Forme
         {
             tabliceTBox.Text = naplatnoMesto.citacTablica.ocitajTablicu();
             vremeTBox.Text = "";
+            policijaLabel.Hide();
             rsd.Checked = true;
             policijaLabel.Hide();
             rampaStanje.Text = "Rampa: spuštena";
