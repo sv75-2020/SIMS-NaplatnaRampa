@@ -16,7 +16,7 @@ namespace NaplatnaRampa
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginForm());
+            Application.Run(Aplikacija.login());
         }
     }
 }

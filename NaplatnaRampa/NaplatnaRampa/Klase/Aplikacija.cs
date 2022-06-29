@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using NaplatnaRampa.Klase;
+using System.Windows.Forms;
 
 namespace NaplatnaRampa
 {
@@ -15,6 +16,12 @@ namespace NaplatnaRampa
         public static List<NaplatnaStanica> naplatneStanice = new List<NaplatnaStanica>();
         public static string fileName= "../../Data/naplatneStanice.txt";
         public static Cenovnik aktivniCenovnik;
+
+        internal static Form login()
+        {
+            return new LoginForm();
+        }
+
         public static Dictionary<string,float> deonice=new Dictionary<string,float>();
 
         static Aplikacija()
