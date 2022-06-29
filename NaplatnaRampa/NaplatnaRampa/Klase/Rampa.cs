@@ -20,5 +20,10 @@
         {
             this.rampaRadi = radi;
         }
+
+        public bool getRadi()
+        {
+            return this.rampaRadi;
+        }
     }
 }

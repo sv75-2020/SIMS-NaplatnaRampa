@@ -95,7 +95,7 @@ namespace NaplatnaRampa
         {
             using (StreamWriter tw = File.AppendText(fileName))
             {
-                string line = mesto.id + "|" + mesto.elektronsko.ToString().ToLower() + "|" + mesto.stanica.id.ToString()+"|"+mesto.Radi().ToString();
+                string line = mesto.id + "|" + mesto.elektronsko.ToString().ToLower() + "|" + mesto.stanica.id.ToString() + "|" + mesto.Radi().ToString() + "|" + mesto.citacTablica.getRadi().ToString().ToLower() + "|" + mesto.rampa.getRadi().ToString().ToLower() + "|" + mesto.semafor.getRadi().ToString().ToLower() + "|" + mesto.citacTaga.getRadi().ToString().ToLower();
                 tw.WriteLine(line);
                 tw.Close();
             }

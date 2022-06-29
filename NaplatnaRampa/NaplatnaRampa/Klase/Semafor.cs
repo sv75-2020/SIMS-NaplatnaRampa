@@ -21,5 +21,10 @@
             this.semaforRadi = radi;
         }
 
+        public bool getRadi()
+        {
+            return this.semaforRadi;
+        }
+
     }
 }

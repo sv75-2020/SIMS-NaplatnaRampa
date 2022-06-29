@@ -55,3 +55,5 @@ C:\Users\suput\Documents\GitHub\SIMS-NaplatnaRampa\NaplatnaRampa\NaplatnaRampa\o
 C:\Users\suput\Documents\GitHub\SIMS-NaplatnaRampa\NaplatnaRampa\NaplatnaRampa\obj\Debug\NaplatnaRampa.Forme.SefForm.resources
 C:\Users\zoric\Documents\GitHub\SIMS-NaplatnaRampa\NaplatnaRampa\NaplatnaRampa\obj\Debug\NaplatnaRampa.Forme.IspravnostForm.resources
 C:\Users\suput\Documents\GitHub\SIMS-NaplatnaRampa\NaplatnaRampa\NaplatnaRampa\obj\Debug\NaplatnaRampa.Forme.IspravnostForm.resources
+C:\Users\Milenko\Desktop\Everything\Faks shit ass\Uvod u softversko\Vezbe 4\SIMS-NaplatnaRampa\NaplatnaRampa\NaplatnaRampa\obj\Debug\NaplatnaRampa.Forme.FizickaNaplata.resources
+C:\Users\Milenko\Desktop\Everything\Faks shit ass\Uvod u softversko\Vezbe 4\SIMS-NaplatnaRampa\NaplatnaRampa\NaplatnaRampa\obj\Debug\NaplatnaRampa.Forme.IspravnostForm.resources

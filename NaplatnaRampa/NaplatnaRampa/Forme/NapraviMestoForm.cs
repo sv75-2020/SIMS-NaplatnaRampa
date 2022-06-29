@@ -33,7 +33,7 @@ namespace NaplatnaRampa.Forme
                 radi = true;
             }
             int idMesta = napStanica.GetNewId();
-            NaplatnoMesto mesto = new NaplatnoMesto(idMesta, elektronsko, napStanica,radi, true, true, true, elektronsko);
+            NaplatnoMesto mesto = new NaplatnoMesto(idMesta, elektronsko, napStanica, radi, true, true, true, elektronsko);
             napStanica.AddMesto(mesto);
             MessageBox.Show("Dodato novo naplatno mesto!");
             this.Hide();
