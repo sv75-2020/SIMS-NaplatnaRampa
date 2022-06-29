@@ -20,6 +20,7 @@ namespace NaplatnaRampa.Forme
         public FizickaNaplata(int idNapMesta, int idNapStanice)
         {
             InitializeComponent();
+            this.idNapStanice = idNapStanice;
             NaplatnaStanica stanica = Aplikacija.FindStanica(idNapStanice.ToString());
             (this.naplatnoMesto, this.pozicija) = stanica.FindMesto(idNapMesta.ToString());
         }
@@ -54,6 +55,7 @@ namespace NaplatnaRampa.Forme
             Dictionary<TipVozila, float> cenaPoTipu = Aplikacija.aktivniCenovnik.CenaPoTipu();
             float q = cenaPoTipu[tipVozila];
             iznosLabel.Text = naplata.izracunajCenu().ToString();
+            naplata.WriteToFile();
         }
 
         private void FizickaNaplata_Load(object sender, EventArgs e)

@@ -59,14 +59,17 @@ namespace NaplatnaRampa
             float km = Aplikacija.aktivniCenovnik.CenaPoKm();
             Dictionary<TipVozila, float> cenaPoTipu = Aplikacija.aktivniCenovnik.CenaPoTipu();
             float q = cenaPoTipu[tipVozila];
-            if (evri)
-                return q * km / 117;
-            return q * km;
+            if (evri) { 
+                iznos = q * km / 117;
+                return iznos;
+            }
+            iznos = q * km;
+            return iznos;
         }
 
         public string ToFile()
         {
-            return id.ToString() + tipVozila.ToString() + deonica + evri.ToString() + vremeUlaska.ToString() + vremeNaplate.ToString() + tablica + iznos.ToString() + idStanice.ToString() + idRadnika.ToString();
+            return id.ToString() + "|" + tipVozila.ToString() + "|" + deonica + "|" + evri.ToString().ToLower() + "|" + vremeUlaska.ToString("MM-dd-yyyy HH:mm") + "|" + vremeNaplate.ToString("MM-dd-yyyy HH:mm") + "|" + tablica + "|" + iznos.ToString() + "|" + idStanice.ToString() + "|" + idRadnika.ToString() + "\n";
         }
 
         public void WriteToFile()

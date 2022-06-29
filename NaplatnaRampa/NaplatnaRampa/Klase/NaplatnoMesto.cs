@@ -78,7 +78,7 @@ namespace NaplatnaRampa
                 string[] data = line.Split('|');
                 id = data[0];
             }
-            return id;
+            return (Int32.Parse(id)+1).ToString();
         }
 
         public float zarada(DateTime pocetak,DateTime kraj)
