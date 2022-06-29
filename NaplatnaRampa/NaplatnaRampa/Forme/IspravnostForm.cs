@@ -45,6 +45,13 @@ namespace NaplatnaRampa.Forme
             {
                 (NaplatnoMesto pokvarenoMesto,int poz)=stanica.FindMesto(GetSelected());
                 pokvarenoMesto.setRadi(true);
+                pokvarenoMesto.citacTablica.setRadi(true);
+                pokvarenoMesto.semafor.setRadi(true);
+                pokvarenoMesto.rampa.setRadi(true);
+                if (pokvarenoMesto.elektronsko)
+                {
+                    pokvarenoMesto.citacTaga.setRadi(true);
+                }
                 stanica.EditMesto(pokvarenoMesto,poz);
                 MessageBox.Show("Naplatno mesto " + pokvarenoMesto.Id() + " je popravljeno");
             }

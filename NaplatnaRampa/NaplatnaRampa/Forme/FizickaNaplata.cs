@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,8 +20,9 @@ namespace NaplatnaRampa.Forme
         public FizickaNaplata(int idNapMesta, int idNapStanice)
         {
             InitializeComponent();
+            this.idNapStanice = idNapStanice;
             NaplatnaStanica stanica = Aplikacija.FindStanica(idNapStanice.ToString());
-            (naplatnoMesto, pozicija) = stanica.FindMesto(idNapMesta.ToString());
+            (this.naplatnoMesto, this.pozicija) = stanica.FindMesto(idNapMesta.ToString());
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -53,6 +55,7 @@ namespace NaplatnaRampa.Forme
             Dictionary<TipVozila, float> cenaPoTipu = Aplikacija.aktivniCenovnik.CenaPoTipu();
             float q = cenaPoTipu[tipVozila];
             iznosLabel.Text = naplata.izracunajCenu().ToString();
+            naplata.WriteToFile();
         }
 
         private void FizickaNaplata_Load(object sender, EventArgs e)
@@ -61,7 +64,6 @@ namespace NaplatnaRampa.Forme
             rsd.Checked = true;
             policijaLabel.Hide();
             uredjajiTabela();
-            button1.Enabled = false;
         }
 
         private void uredjajiTabela()
@@ -87,8 +89,6 @@ namespace NaplatnaRampa.Forme
             rsd.Checked = true;
             policijaLabel.Hide();
             rampaStanje.Text = "Rampa: spuštena";
-            button1.Enabled = true;
-            ucitajBtn.Enabled = false;
         }
 
         private float vratiKusur(float novac)
@@ -133,10 +133,9 @@ namespace NaplatnaRampa.Forme
                         break;
                 }
                 uredjajiTabela();
+                naplatnoMesto.setRadi(false);
             }
-            NaplatnaStanica stanica = Aplikacija.FindStanica(idNapStanice.ToString());
-            stanica.naplatnaMesta[pozicija] = naplatnoMesto;
-
+            
         }
 
 
